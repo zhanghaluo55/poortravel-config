@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: poortravel-eureka
+  boot:
+    admin:
+      client:
+        url: http://192.168.229.137:8084
+  zipkin:
+    base-url: http://192.168.229.137:9411
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: 192.168.229.137
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://192.168.229.137:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info

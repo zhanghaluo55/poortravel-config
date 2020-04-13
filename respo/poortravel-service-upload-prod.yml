@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: poortravel-service-upload
+
+fastdfs.base.url: http://111.230.171.37:8888/
+storage:
+  type: fastdfs
+  fastdfs:
+    tracker_server: 111.230.171.37:22122
+
+server:
+  port: 8505

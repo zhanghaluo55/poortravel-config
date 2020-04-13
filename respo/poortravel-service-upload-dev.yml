@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: poortravel-service-upload
+
+fastdfs.base.url: http://localhost:8888/
+storage:
+  type: fastdfs
+  fastdfs:
+    tracker_server: localhost:22122
+
+server:
+  port: 8505

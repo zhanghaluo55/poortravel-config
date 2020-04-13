@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: poortravel-web-bamui
+
+server:
+  port: 8603
