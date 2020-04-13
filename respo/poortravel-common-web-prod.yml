@@ -2,9 +2,9 @@ spring:
   boot:
     admin:
       client:
-        url: http://192.168.229.137:8084
+        url: http://111.230.171.37:8084
   zipkin:
-    base-url: http://192.168.229.137:9411
+    base-url: http://111.230.171.37:9411
   thymeleaf:
     cache: false
     mode: LEGACYHTML5
@@ -23,7 +23,7 @@ feign:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.229.137:8761/eureka/
+      defaultZone: http://111.230.171.37:8761/eureka/
 
 management:
   endpoint:
