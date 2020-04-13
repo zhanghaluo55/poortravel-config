@@ -10,7 +10,7 @@ spring:
           min-idle: 0
       sentinel:
         master: mymaster
-        nodes: 111.230.171.37:26379
+        nodes: 111.230.171.37:26379, 111.230.171.37:26380, 111.230.171.37:26381
 
 server:
   port: 8502
