@@ -1,7 +1,12 @@
 spring:
   application:
     name: poortravel-service-upload
-
+  boot:
+    admin:
+      client:
+        instance:
+          service-url: http://47.103.198.196:8505
+          name: poortravel-service-upload
 fastdfs.base.url: http://111.230.171.37:8888/
 storage:
   type: fastdfs
