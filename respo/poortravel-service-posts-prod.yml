@@ -1,6 +1,12 @@
 spring:
   application:
     name: poortravel-service-posts
+  boot:
+    admin:
+      client:
+        instance:
+          service-url: http://47.103.198.196:8504
+          name: poortravel-service-posts
   datasource:
     druid:
       url: jdbc:mysql://111.230.171.37:3306/poortravel-service-post?useUnicode=true&characterEncoding=utf-8&useSSL=false
