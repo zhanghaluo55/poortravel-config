@@ -1,6 +1,11 @@
 spring:
   application:
     name: poortravel-web-bamui
-
+  boot:
+    admin:
+      client:
+        instance:
+          service-url: http://47.103.198.196:8603
+          name: poortravel-web-bamui
 server:
   port: 8603
