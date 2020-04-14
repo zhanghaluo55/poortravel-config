@@ -3,8 +3,10 @@ spring:
     name: poortravel-eureka
   boot:
     admin:
+      url: http://111.230.171.37:8084
       client:
-        url: http://111.230.171.37:8084
+        service-url: http://111.230.171.37:8761
+        name: poortravel-eureka
   zipkin:
     base-url: http://111.230.171.37:9411
 
