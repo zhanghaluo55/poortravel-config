@@ -19,6 +19,30 @@ eureka:
     serviceUrl:
       defaultZone: http://111.230.171.37:8761/eureka/
 
+zuul:
+  routes:
+    poortravel-service-admin:
+      path: /admin/service/**
+      serviceId: poortravel-service-admin
+    poortravel-service-posts:
+      path: /post/service/**
+      serviceId: poortravel-service-posts
+    poortravel-service-attraction:
+      path: /attraction/service/**
+      serviceId: poortravel-service-attraction
+    poortravel-service-base:
+      path: /base/service/**
+      serviceId: poortravel-service-base
+    poortravel-service-upload:
+      path: /upload/service/**
+      serviceId: poortravel-service-upload
+    poortravel-web-bamui:
+      path: /bamui/web/**
+      serviceId: poortravel-web-bamui
+    poortravel-service-redis:
+      path: /redis/service/**
+      serviceId: poortravel-service-redis
+
 management:
   endpoint:
     health:
