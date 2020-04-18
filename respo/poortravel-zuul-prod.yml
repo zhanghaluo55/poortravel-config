@@ -44,15 +44,20 @@ zuul:
       serviceId: poortravel-service-base
     poortravel-service-upload:
       path: /upload/service/**
-      url: http://117.78.9.139:8505
+      url: http://101.200.190.151:8505
       serviceId: poortravel-service-upload
     poortravel-web-bamui:
       path: /bamui/web/**
+      url: http://101.200.190.151:8603
       serviceId: poortravel-web-bamui
     poortravel-service-redis:
       path: /redis/service/**
-      url: http://117.78.9.139:8502
+      url: http://101.200.190.151:8502
       serviceId: poortravel-service-redis
+    poortravel-service-sso:
+      path: /sso/service/**
+      url: http://101.200.190.151:8503
+      serviceId: poortravel-service-sso
 
 management:
   endpoint:
