@@ -32,6 +32,7 @@ zuul:
       serviceId: poortravel-service-admin
     poortravel-service-posts:
       path: /post/service/**
+      url: http://47.103.198.196:8504
       serviceId: poortravel-service-posts
     poortravel-service-attraction:
       path: /attraction/service/**
@@ -39,15 +40,18 @@ zuul:
       serviceId: poortravel-service-attraction
     poortravel-service-base:
       path: /base/service/**
+      url: http://47.103.198.196:8507
       serviceId: poortravel-service-base
     poortravel-service-upload:
       path: /upload/service/**
+      url: http://117.78.9.139:8505
       serviceId: poortravel-service-upload
     poortravel-web-bamui:
       path: /bamui/web/**
       serviceId: poortravel-web-bamui
     poortravel-service-redis:
       path: /redis/service/**
+      url: http://117.78.9.139:8502
       serviceId: poortravel-service-redis
 
 management:
