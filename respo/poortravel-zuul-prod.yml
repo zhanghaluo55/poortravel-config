@@ -6,7 +6,7 @@ spring:
       client:
         url: http://111.230.171.37:8084
         instance:
-          service-url: http://101.200.190.151:8769
+          service-url: http://47.101.152.189:8769
           name: poortravel-zuul
   zipkin:
     base-url: http://111.230.171.37:9411
