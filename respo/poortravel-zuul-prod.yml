@@ -28,6 +28,7 @@ zuul:
   routes:
     poortravel-service-admin:
       path: /admin/service/**
+      url: http://47.103.198.196:8501
       serviceId: poortravel-service-admin
     poortravel-service-posts:
       path: /post/service/**
