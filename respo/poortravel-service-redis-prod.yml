@@ -5,7 +5,7 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://47.103.198.196:8502
+          service-url: http://101.200.190.151:8502
           name: poortravel-service-redis
   redis:
       lettuce:
