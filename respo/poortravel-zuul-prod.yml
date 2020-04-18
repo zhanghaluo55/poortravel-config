@@ -35,6 +35,7 @@ zuul:
       serviceId: poortravel-service-posts
     poortravel-service-attraction:
       path: /attraction/service/**
+      url: http://47.103.198.196:8506
       serviceId: poortravel-service-attraction
     poortravel-service-base:
       path: /base/service/**
