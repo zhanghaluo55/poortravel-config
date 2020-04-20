@@ -21,6 +21,8 @@ spring:
 eureka:
   instance:
     instance-id: http://101.200.190.151:8501
+    prefer-ip-address: true
+    hostname: http://101.200.190.151
 
 server:
   port: 8501
