@@ -17,6 +17,8 @@ server:
 eureka:
   instance:
     hostname: 111.230.171.37
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
   client:
     registerWithEureka: false
     fetchRegistry: false
