@@ -5,7 +5,11 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://101.200.190.151:8603
+          service-url: http://47.101.152.189:8603
           name: poortravel-web-bamui
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: 47.101.152.189
 server:
   port: 8603
