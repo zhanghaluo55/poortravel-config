@@ -5,7 +5,7 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://47.103.198.196:8507
+          service-url: http://101.200.190.151:8507
           name: poortravel-service-base
   datasource:
     druid:
@@ -19,5 +19,10 @@ spring:
       # MySQL 8.x: com.mysql.cj.jdbc.Driver
       driver-class-name: com.mysql.jdbc.Driver
 
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: 101.200.190.151
+    
 server:
   port: 8507
