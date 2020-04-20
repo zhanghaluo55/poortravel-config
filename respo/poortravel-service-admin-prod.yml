@@ -20,9 +20,8 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
 eureka:
   instance:
-    instance-id: http://101.200.190.151:8501
-    prefer-ip-address: true
-    hostname: http://101.200.190.151
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    hostname: ${spring.cloud.client.ipAddress}
 
 server:
   port: 8501
