@@ -5,7 +5,7 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://101.200.190.151:8503
+          service-url: http://47.101.152.189:8503
           name: poortravel-service-sso
   datasource:
     druid:
@@ -24,7 +24,11 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
-
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: 47.101.152.189
+    
 server:
   port: 8503
 
