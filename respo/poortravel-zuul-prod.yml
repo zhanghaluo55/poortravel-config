@@ -6,7 +6,7 @@ spring:
       client:
         url: http://111.230.171.37:8084
         instance:
-          service-url: http://47.103.198.196:8769
+          service-url: http://47.101.152.189:8769
           name: poortravel-zuul
   zipkin:
     base-url: http://111.230.171.37:9411
@@ -18,7 +18,7 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}
-    ip-address: 47.103.198.196
+    ip-address: 47.101.152.189
   client:
     serviceUrl:
       defaultZone: http://111.230.171.37:8761/eureka/  
@@ -38,7 +38,7 @@ zuul:
       serviceId: poortravel-service-posts
     poortravel-service-attraction:
       path: /attraction/service/**
-      url: http://101.200.190.151:8506
+      url: http://47.101.152.189:8506
       serviceId: poortravel-service-attraction
     poortravel-service-base:
       path: /base/service/**
@@ -50,15 +50,15 @@ zuul:
       serviceId: poortravel-service-upload
     poortravel-web-bamui:
       path: /bamui/web/**
-      url: http://www.zzhcool.top:8603
+      url: http://47.103.198.196:8603
       serviceId: poortravel-web-bamui
     poortravel-service-redis:
       path: /redis/service/**
-      url: http://47.101.152.189:8502
+      url: http://47.103.198.196:8502
       serviceId: poortravel-service-redis
     poortravel-service-sso:
       path: /sso/service/**
-      url: http://47.101.152.189:8503
+      url: http://47.103.198.196:8503
       serviceId: poortravel-service-sso
 
 management:
