@@ -5,7 +5,7 @@ spring:
     admin:
       client:
         instance:
-          service-url: http://47.103.198.196:8506
+          service-url: http://47.101.152.189:8506
           name: poortravel-service-attraction
   datasource:
     druid:
@@ -21,7 +21,7 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
-    ip-address: 47.103.198.196
+    ip-address: 47.101.152.189
 
 server:
   port: 8506
