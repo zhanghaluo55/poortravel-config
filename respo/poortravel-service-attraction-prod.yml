@@ -21,7 +21,7 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
-    ip-address: 47.103.198.19
+    ip-address: 47.103.198.196
 
 server:
   port: 8506
