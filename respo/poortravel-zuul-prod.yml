@@ -34,15 +34,15 @@ zuul:
       serviceId: poortravel-service-admin
     poortravel-service-posts:
       path: /post/service/**
-      url: http:///101.200.190.151:8504
+      url: http://101.200.190.151:8504
       serviceId: poortravel-service-posts
     poortravel-service-attraction:
       path: /attraction/service/**
-      url: http:///101.200.190.151:8506
+      url: http://101.200.190.151:8506
       serviceId: poortravel-service-attraction
     poortravel-service-base:
       path: /base/service/**
-      url: http:///101.200.190.151:8507
+      url: http://101.200.190.151:8507
       serviceId: poortravel-service-base
     poortravel-service-upload:
       path: /upload/service/**
