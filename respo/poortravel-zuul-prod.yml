@@ -36,18 +36,18 @@ zuul:
       path: /post/service/**
       url: http://101.200.190.151:8504
       serviceId: poortravel-service-posts
-    poortravel-service-attraction:
-      path: /attraction/service/**
-      url: http://47.101.152.189:8506
-      serviceId: poortravel-service-attraction
     poortravel-service-base:
       path: /base/service/**
       url: http://101.200.190.151:8507
       serviceId: poortravel-service-base
     poortravel-service-upload:
       path: /upload/service/**
-      url: http://47.103.198.196:8505
+      url: http://101.200.190.151:8505
       serviceId: poortravel-service-upload
+    poortravel-service-attraction:
+      path: /attraction/service/**
+      url: http://47.103.198.196:8506
+      serviceId: poortravel-service-attraction
     poortravel-web-bamui:
       path: /bamui/web/**
       url: http://47.103.198.196:8603
